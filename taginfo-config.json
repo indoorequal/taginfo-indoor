@@ -81,10 +81,10 @@
     },
     "opensearch": {
         // For the OpenSearchDescription. You have to change at least the shortname and the contact for your instance.
-        "shortname": "Taginfo Test Instance",
-        "contact": "somebody@example.com",
-        "description": "Find metadata about OpenStreetMap tags",
-        "tags": "osm openstreetmap tag tags taginfo"
+        "shortname": "indoor= Taginfo",
+        "contact": "contact@indoorequal.com",
+        "description": "Find metadata about OpenStreetMap tags used on indoor features",
+        "tags": "osm openstreetmap tag tags taginfo indoor"
     },
     "sources": {
         // These sources will be downloaded from https://taginfo.openstreetmap.org/download/
