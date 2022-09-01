@@ -10,6 +10,6 @@ Edit the `.env` and update the `AREA` variable to match the area you want. `plan
 
 To download, filter and create the database for taginfo, execute `./script/update_data.sh`.
 
-To run the taginfo instance, `docker-compose up -d taginfo`, and go to http://localhost:4567
+To run the taginfo instance, `docker-compose up -d web`, and go to http://localhost:4567
 
 [taginfo]: https://github.com/taginfo/taginfo
