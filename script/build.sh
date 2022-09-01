@@ -3,7 +3,7 @@
 set -ex
 
 # Remove previous download
-rm build/planet.osm.pbf
+rm -f build/planet.osm.pbf
 # download osm
 docker-compose run --rm tools
 # Extract data
