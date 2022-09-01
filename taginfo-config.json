@@ -12,7 +12,7 @@
         // Additional description that will only appear on the about page.
         "about": "<p>This site is maintained by indoor=.</p><p>There isn't just one taginfo site, there are several. The main site is at <a class='extlink' href='https://taginfo.openstreetmap.org/'>taginfo.openstreetmap.org</a>, but several <a class='extlink' href='https://wiki.openstreetmap.org/wiki/Taginfo/Sites'>other taginfo sites</a> are operated by different people.</p>",
         // URL path to instance icon in the upper left.
-        "icon": "/img/logo/test.png",
+        "icon": "/img/logo/indoorequal.svg",
         // Contact name and email address.
         "contact": "François de Metz",
         // Geographical area this taginfo instance covers.
