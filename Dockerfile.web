@@ -13,3 +13,5 @@ RUN gem install puma
 RUN git clone https://github.com/taginfo/taginfo.git && \
     cd taginfo && \
     bundle install
+
+EXPOSE 4567
