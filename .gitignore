@@ -1,0 +1,10 @@
+build/db
+build/download
+build/languages
+build/log
+build/projects
+build/wiki
+build/*.db
+build/*.osm.pbf
+data/*.db
+data/download

@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  tools:
+    image: "indoorequal/openmaptiles-tools:${TOOLS_VERSION}"
+    command: download-osm ${AREA} --output /build/planet.osm.pbf
+    volumes:
+      - ./build:/build
+
+  extractdata:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    command: bash -c "osmium tags-filter /build/planet.osm.pbf level=* -o /build/planet.levelonly.osm.pbf --overwrite && /code/taginfo/sources/update_all.sh /build && cp -p /build/taginfo-*.db /build/*/taginfo-*.db /data && cp -r /build/download /data"
+    volumes:
+      - ./build:/build
+      - ./data:/data
+      - ./taginfo-config.json:/code/taginfo-config.json
+
+  web:
+    build:
+      dockerfile: Dockerfile.web
+      context: .
+    command: bash -c "cd /code/taginfo/web && puma --bind tcp://0.0.0.0:4567"
+    ports:
+      - "4567:4567"
+    volumes:
+      - ./data:/data
+      - ./taginfo-config.json:/code/taginfo-config.json
