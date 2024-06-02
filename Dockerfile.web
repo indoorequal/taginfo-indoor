@@ -1,4 +1,4 @@
-FROM ruby:3.2-bullseye
+FROM ruby:3.3-bullseye
 
 RUN set -eux ;\
     DEBIAN_FRONTEND=noninteractive apt-get update ;\
