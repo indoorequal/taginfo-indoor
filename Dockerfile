@@ -40,7 +40,7 @@ RUN set -eux ;\
 
 WORKDIR /code
 
-ENV GEM_HOME=/usr/local/lib/ruby/gems/3.1.0
+ENV GEM_HOME=/usr/local/lib/ruby/gems/3.3.0
 ENV TAGINFO_RUBY=/usr/local/bin/ruby
 
 RUN git clone https://github.com/taginfo/taginfo.git && \
