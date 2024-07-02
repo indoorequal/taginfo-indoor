@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   tools:
     image: "indoorequal/openmaptiles-tools:${TOOLS_VERSION}"
