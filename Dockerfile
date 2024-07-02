@@ -1,4 +1,4 @@
-FROM debian:bullseye as taginfo-tools
+FROM debian:bookworm as taginfo-tools
 
 RUN set -eux ;\
     DEBIAN_FRONTEND=noninteractive apt-get update ;\
@@ -26,7 +26,7 @@ RUN git clone --recurse-submodules https://github.com/taginfo/taginfo-tools.git 
     cmake .. && \
     make
 
-FROM ruby:3.3-bullseye
+FROM ruby:3.3-bookworm
 
 RUN set -eux ;\
     DEBIAN_FRONTEND=noninteractive apt-get update ;\
