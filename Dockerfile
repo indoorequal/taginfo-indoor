@@ -1,4 +1,4 @@
-FROM debian:bookworm as taginfo-tools
+FROM debian:bookworm AS taginfo-tools
 
 RUN set -eux ;\
     DEBIAN_FRONTEND=noninteractive apt-get update ;\
