@@ -21,7 +21,7 @@ services:
     build:
       dockerfile: Dockerfile.web
       context: .
-    command: bash -c "cd /code/taginfo/web && puma --bind tcp://0.0.0.0:4567"
+    command: bash -c "cd /code/taginfo/web && puma --environment production  --bind tcp://0.0.0.0:4567"
     ports:
       - "4567:4567"
     volumes:
