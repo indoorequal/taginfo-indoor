@@ -26,7 +26,7 @@ RUN git clone --recurse-submodules https://github.com/taginfo/taginfo-tools.git 
     cmake .. && \
     make
 
-FROM ruby:3.3-bookworm
+FROM ruby:3.4-bookworm
 
 RUN set -eux ;\
     DEBIAN_FRONTEND=noninteractive apt-get update ;\
