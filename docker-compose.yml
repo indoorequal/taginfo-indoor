@@ -1,6 +1,6 @@
 services:
   tools:
-    image: "indoorequal/openmaptiles-tools:${TOOLS_VERSION}"
+    image: "ghcr.io/indoorequal/openmaptiles-tools:${TOOLS_VERSION}"
     command: download-osm ${AREA} --output /build/planet.osm.pbf
     volumes:
       - ./build:/build
