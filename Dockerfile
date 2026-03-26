@@ -1,4 +1,4 @@
-FROM debian:trixie AS taginfo-tools
+FROM debian:trixie-20260316 AS taginfo-tools
 
 RUN set -eux ;\
     DEBIAN_FRONTEND=noninteractive apt-get update ;\
